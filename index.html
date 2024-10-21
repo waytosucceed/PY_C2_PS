@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffde57;
+            text-align: center;
+            color: #333;
+        }
+
+        .header {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 5px 30px;
+            background-color: white;
+            text-align: left;
+        }
+
+        .logo {
+            width: 5%;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .header-image {
+            width: 30%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            margin: 1rem 2rem;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px 2rem;
+        }
+
+        .highlight {
+            background: #eee;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .image-container {
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background: #007bff;
+            color: #fff;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        ol {
+            li {
+                margin-bottom: 0.7rem;
+            }
+        }
+
+        .instruction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the images horizontally if needed */
+}
+
+        .instruction-img{
+            width: 100%;
+            height: auto;
+        }
+
+        /* Modal styles */
+      /* Modal styles */
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    overflow: auto; /* Allow scrolling if needed */
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px; /* Adjusted for better fit */
+    max-height: 90vh; /* Ensure it fits within the viewport height */
+    overflow-y: auto; /* Allow vertical scrolling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="./logo/Logo.png" alt="Logo" class="logo" />
+        <img src="./logo/header.png" alt="Header" class="header-image" />
+    </header>
+    <div class="container" style="font-family: 'Comic Sans MS', cursive;padding: 2rem 4rem ;">
+        <h1 style="color: #ff4500; text-align: center; font-size: 2.5rem;">Welcome to Mathematicia!</h1>
+        <p style="font-size: 1.2rem; color: #333;">You are an architect in the city of <b>Mathematicia</b> and are known for your awesome problem-solving and artistic skills. 🏙️✨</p>
+    
+        <p style="font-size: 1.2rem; color: #333;">In this city, <b>Numpy</b>, a Python programmer, is planning to build a skyscraper named <b>Arithmeticia</b>. Although another architect has already created a blueprint, Numpy isn't satisfied and wants to make some changes.</p>
+        
+        <p style="font-size: 1.2rem; color: #333;">The width and height of each floor in the skyscraper are <b>100</b> and <b>500</b> respectively. Let's use your coding skills to help him! 🚀</p>
+        
+        <h2 style="color: #ff4500; font-size: 1.8rem; text-align: center;">Here’s what you need to do in the Python program:</h2>
+        <ul style="font-size: 1.2rem; color: #333; list-style-type: decimal; padding-left: 20px; text-align: left">
+            <li>Show the original values of width and height.</li>
+            <li>Increase the height by 100 and display the new height.</li>
+            <li>Reduce the width by 20 to make room for windows and display the new width.</li>
+            <li>Calculate the total floor area (width × length, assuming the length is 100) and display it.</li>
+            <li>Calculate how many rooms can fit on one floor, considering each room has an area of 480, and display that number.</li>
+        </ul>
+    
+        <h3 style="color: #4caf50; font-size: 1.5rem;">Steps to follow:</h3>
+        <ol style="font-size: 1.2rem; color: #333; padding-left: 20px;text-align: left">
+            <li>Create variables for width and height, storing <b>100</b> and <b>500</b> in them respectively. Print the initial height and width.</li>
+            <li>Increase the height by <b>100</b> and print it.</li>
+            <li>Subtract <b>20</b> from the width for window space and print the new width.</li>
+            <li>Calculate and print the total floor area (width × length, where length = 100).</li>
+            <li>Calculate the number of rooms per floor (with each room having an area of 480) and print that number.</li>
+        </ol>
+    
+        <a href="#" class="button" id="modalBtn" style="display: block; width: fit-content; margin: 20px auto; padding: 10px 20px; background-color: #ff4500; color: white; text-decoration: none; border-radius: 10px; text-align: center;">💡 How to share your project with the teacher?</a>
+        <p>Project Template:👉 <a href="https://colab.research.google.com/drive/1-BD0JsqyFoz58ED8aJZLpAKUGKoHjeXU?usp=sharing" target="_blank" class="button">Let's Start</a></p>
+
+    </div>
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>How to Share Your Project</h2>
+            <div class="instruction-container">
+            <img src="./images/howtoshareproject/1.png" alt="Step 1" class="instruction-img"/> 
+            <img src="./images/howtoshareproject/2.png" alt="Step 2" class="instruction-img"/>
+            <img src="./images/howtoshareproject/3.png" alt="Step 3" class="instruction-img"/>
+            <img src="./images/howtoshareproject/4.png" alt="Step 4" class="instruction-img"/>
+            <img src="./images/howtoshareproject/5.png" alt="Step 5" class="instruction-img"/>
+            <img src="./images/howtoshareproject/6.png" alt="Step 6" class="instruction-img"/>
+        </div>
+        </div>
+    </div>
+    
+    </div>
+
+    <script>
+        // Get modal and button elements
+// Get modal and button elements
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("modalBtn");
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function () {
+    modal.style.display = "flex";
+}
+
+// When the user clicks on the close button, close the modal
+span.onclick = function () {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+    </script>
+</body>
+
+</html>
